@@ -5,7 +5,7 @@ const countries = require('./countries.json');
  * @returns {Object}
  */
 function getCountryByIso3(isoCode){
-    //Complete with your code
+    return countries.filter(c => c.iso3 == isoCode)
 }
 
 /**
@@ -28,6 +28,7 @@ function getCountriesBySubregion(subregion){
 function main() {
     console.log(
         '///// Ejercicio 1 /////\n',
+        
         getCountryByIso3('ARG'),
         '\n');
     console.log(
