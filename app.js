@@ -26,7 +26,9 @@ function getCountryTranslatedName(isoCode, language){
  * @returns {Array}
  */
 function getCountriesBySubregion(subregion){
-    //Complete with your code
+    let paises  = []
+    paises = countries.filter(country => country.subregion == subregion)
+    return paises
 }
 
 function main() {
